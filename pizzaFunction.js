@@ -1,38 +1,21 @@
-function pizzaOven( crustType, sauceType, cheeses, toppings) {
+
+function pizzaOven(crustType, sauceType, cheeses, toppings, sides) {
     var pizza = {};
     pizza.crustType = crustType;
     pizza.sauceType = sauceType;
-    pizza.cheeses = cheeses;
-    pizza.toppings = toppings;
+    pizza.cheeses   = cheeses;
+    pizza.toppings  = toppings;
+    pizza.sides     = sides;
     return pizza;
 }
-// var pizza = pizzaOven()
-// console.log(pizzaOven);
+var pizza1 = pizzaOven("deep dish","traditional","mozzarella",["pepperoni", "sausage"])
+console.log(pizza1);
 
+var pizza2 = pizzaOven("hand tossed","marinara",["mozzarella","feta"],["mushrooms","olives","onions"])
+console.log(pizza2);
 
+var pizza3 = pizzaOven("neopolitan", "pesto","buffalo mozzarella",["sundried tomatoes", "spinach","fresh garlic","artichoke hearts"], "tub of ranch")
+console.log(pizza3);
 
-// var pizza = {
-//     crust:    "regular",
-//     sauce:    "red",
-//     cheese:   "mozzarella",
-//     toppings: ["mushrooms", "olives", "garlic"]
-// };
-
-    // console.log(pizza)
-
-
-
-
-    // function pizzaOven( crustType, sauceType, cheeses, toppings){
-    //     var pizza ={};
-    //         pizza.crustType = ["regular","thin","deep dish"];
-    //         pizza.sauceType = ["red","pesto","garlic-cream"];
-    //         pizza.cheeses =   ["mozzarella","buffalo mozzarella"];
-    //         pizza.toppings =  ["pepperoni", "sausage"];
-    //         return pizza;
-}
-// var pizza1 = pizzaOven(["deep dish"], ["red"], ["mozzarella"], ["pepperoni", "sausage"]);
-// console.log(pizza);
-
-
-
+var pizza4 = pizzaOven("peanut butter stuffed crust", "grape jelly","velveeta",["jalapeños", "spearmint tic tacs"," peat moss"], "manteca")
+console.log(pizza4);
